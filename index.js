@@ -21,7 +21,7 @@ function App() {
     }
     if (
       inp === "-" &&
-      (input[input.length - 3] === "-" ||
+      (input[input.length - 2] === "-" ||
         input[input.length - 1] === "*" ||
         input[input.length - 1] === "/" ||
         input[input.length - 1] === "+")
@@ -60,7 +60,6 @@ function App() {
         containDot = false;
       }
     });
-
     if (containDot && inp === ".") eraseIt();
   };
 
