@@ -22,9 +22,9 @@ function App() {
     if (
       inp === "-" &&
       (input[input.length - 2] === "-" ||
-        input[input.length - 1] === "*" ||
-        input[input.length - 1] === "/" ||
-        input[input.length - 1] === "+")
+        input[input.length] === "*" ||
+        input[input.length] === "/" ||
+        input[input.length] === "+")
     ) {
       eraseIt();
     }
@@ -95,9 +95,8 @@ function App() {
             value={input}
             placeholder="0"
             disabled
-            id="display"
           ></input>
-          <div className="result" id="display">
+          <div className="result">
             {result}
           </div>
         </div>
